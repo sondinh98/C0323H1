@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ceaa7f7-9e05-4b8d-bb9c-956a61c72346" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Bai 5/BaiTap2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bai 5/BaiTap4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bai 5/BaiTap5.1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bai 5/BaiTap5.2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bai 5/mau.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/formdangkynguoidung.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai 6/BaiTap2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bai 6/BaiTap2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai 6/BaiTap4.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bai 6/BaiTap4.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +55,16 @@
       <recent name="C:\Users\ADMIN\Desktop\Gitproject3" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="BaiTap2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Gitproject3/Bai 6/BaiTap2.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.BaiTap2.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -72,7 +79,8 @@
       <workItem from="1680512783392" duration="6979000" />
       <workItem from="1680533128332" duration="15546000" />
       <workItem from="1680569790060" duration="11037000" />
-      <workItem from="1680588224378" duration="23714000" />
+      <workItem from="1680588224378" duration="32713000" />
+      <workItem from="1680656041878" duration="320000" />
     </task>
     <servers />
   </component>

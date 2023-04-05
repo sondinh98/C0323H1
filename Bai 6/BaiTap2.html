@@ -3,40 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <style>
+    table{
+      width: 60%; margin-right: auto;margin-left: auto;
+    }
+  </style>
 </head>
 <body>
 <table>
   <tr>
-    <th colspan="4" style="background: red"><h3>SO THICH CUA BAN</h3></th>
+    <th colspan="4" style="background:orangered "><h3 style="color: #dddddd">SỞ THÍCH CỦA BẠN</h3></th>
   </tr>
   <tr>
-    <td style="color: blue">Ho va ten</td>
-    <td colspan="2"><input type="text" name="ho va ten"></td>
+    <td style="color: blue">Họ va tên</td>
+    <td colspan="2"><input type="text" name="Họ và tên"></td>
   </tr>
   <tr>
     <td style="color: blue">Email</td>
     <td colspan="2"><input type="text"name="email"></td>
   </tr>
   <tr>
-    <td style="color: blue">So thich</td>
-    <td style="color: orangered"><input type="checkbox"name="sport"value="The thao">The thao</td>
-    <td style="color: orangered"><input type="checkbox"name="music"value="Am nhac">Am nhac</td>
-    <td style="color: orangered"><input type="checkbox"name="read"value="Doc sach">Doc sach</td>
+    <td style="color: blue">Sở thích</td>
+    <td style="color: orangered"><input type="checkbox"name="sport"value="The thao">Thể thao</td>
+    <td style="color: orangered"><input type="checkbox"name="music"value="Am nhac">Âm nhạc</td>
+    <td style="color: orangered"><input type="checkbox"name="read"value="Doc sach">Đọc sách</td>
   </tr>
   <tr>
     <td></td>
-    <td style="color: orangered"><input type="checkbox"name="Web"value="Luot web">Luot web</td>
-    <td style="color: orangered"><input type="checkbox"name="game"value="Choi game">Choi game</td>
-    <td style="color: orangered"><input  type="checkbox"name="Dienanh"value="Dien anh">Dien anh</td>
+    <td style="color: orangered"><input type="checkbox"name="Web"value="Luot web">Lướt web</td>
+    <td style="color: orangered"><input type="checkbox"name="game"value="Choi game">Chơi game</td>
+    <td style="color: orangered"><input  type="checkbox"name="Dienanh"value="Dien anh">Điện ảnh</td>
   </tr>
   <tr>
     <td></td>
-    <td style="color: orangered"><input type="checkbox"name="travel"value="Du lich">Du lich</td>
+    <td style="color: orangered"><input type="checkbox"name="travel"value="Du lich">Du lịch</td>
   </tr>
   <tr>
     <td></td>
-    <td><input type="button"value="Gui thong tin"></td>
-    <td><input type="button"value="Nhap lai"></td>
+    <td><input type="submit"value="Gửi thông tin"></td>
+    <td><input type="reset"value="Đặt lại"></td>
   </tr>
 </table>
 <br>
@@ -44,8 +49,79 @@
 <br>
 <br>
 <br>
-<table>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<table style="background:greenyellow">
+  <tr>
+    <td colspan="2" style="background: lightskyblue">
+      <b style="color: blue">Đăng Ký Học Viên</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Họ và tên</td>
+    <td><input type="text"name="Họ và Tên"></td>
+  </tr>
+  <tr>
+    <td>Ngày sinh</td>
+    <td><input type="number"name="date"></td>
+  </tr>
+  <tr>
+    <td>Giới tính</td>
+    <td><input type="radio"name="gender"value="Nam">Nam
+    <input type="radio"name="gender"value="Nữ">Nữ
+    </td>
+  </tr>
+  <tr>
+    <td>Địa chỉ</td>
+    <td>
+      <textarea cols="50"rows="4"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td>Lớp</td>
+    <td>
+      <select name="Lớp">
+        <option value="Chọn lớp">-Chọn lớp-</option>
+        <option value="10">-Lớp 10-</option>
+        <option value="11">-Lớp 11-</option>
+        <option value="12">-Lớp 12-</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td>
+      <input type="email"name="email">
+    </td>
+  </tr>
+  <tr>
+    <td>Điện thoại</td>
+    <td>
+      <input type="number"name="sdt">
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>
+      <input type="submit"value="Đăng ký">
+      <input type="reset"value="Nhập lại">
+    </td>
+  </tr>
 </table>
 </body>
 </html>
