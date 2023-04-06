@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Caculator</h2>
+<table>
+    <tr>
+        <td colspan="2"><input type="number"  id="number1"></td>
+        <td colspan="2"><input type="number"  id="number2"></td>
+
+    </tr>
+    <tr>
+        <td><input type="button" value="Addition(+)" onclick="add()"></td>
+        <td><input type="button" value="Subtraction(-)" onclick="sub()"></td>
+        <td><input type="button" value="Multiplication(X)" onclick="mul()"></td>
+        <td><input type="button" value="Division(/)" onclick="div()"></td>
+    </tr>
+
+</table>
+<p id="Display">Result Division :</p>
+<script>
+    function add () {
+        let number1 = document.getElementById("number1");
+        let number2 = document.getElementById("number2");
+        let Display = document.getElementById("Display");
+
+        let num1 = number1.value;
+        let num2 = number2.value;
+        let result = Number(num1) + Number(num2);
+
+        Display.innerText = ("Result Division : " + result)
+    }
+    function sub () {
+        let number1 = document.getElementById("number1");
+        let number2 = document.getElementById("number2");
+        let Display = document.getElementById("Display");
+
+        let num1 = number1.value;
+        let num2 = number2.value;
+        let result = Number(num1) - Number(num2);
+
+        Display.innerText = ("Result Division : " + result)
+    }
+    function mul () {
+        let number1 = document.getElementById("number1");
+        let number2 = document.getElementById("number2");
+        let Display = document.getElementById("Display");
+
+        let num1 = number1.value;
+        let num2 = number2.value;
+        let result = Number(num1) * Number(num2);
+
+        Display.innerText = ("Result Division : " + result)
+    }
+    function div () {
+        let number1 = document.getElementById("number1");
+        let number2 = document.getElementById("number2");
+        let Display = document.getElementById("Display");
+
+        let num1 = number1.value;
+        let num2 = number2.value;
+        let result = Number(num1) / Number(num2);
+
+        Display.innerText = ("Result Division : " + result)
+    }
+
+</script>
+</body>
+</html>
