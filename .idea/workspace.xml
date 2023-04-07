@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ceaa7f7-9e05-4b8d-bb9c-956a61c72346" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Bai 7/UngDungMayTinh.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai 7/â.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai 9/TinhChiSoCanNanng.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +23,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2NuM0lB82riYfWvkeRDct6lfNeU" />
@@ -83,7 +88,8 @@
       <workItem from="1680588224378" duration="32713000" />
       <workItem from="1680656041878" duration="19596000" />
       <workItem from="1680707962130" duration="1862000" />
-      <workItem from="1680743669763" duration="24144000" />
+      <workItem from="1680743669763" duration="30753000" />
+      <workItem from="1680829496116" duration="2848000" />
     </task>
     <servers />
   </component>

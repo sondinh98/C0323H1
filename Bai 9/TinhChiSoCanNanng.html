@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h2>Tính Chỉ Số Cân Nặng</h2>
+<table>
+  <tr>
+    <td>Nhập cân nặng:(kg)</td>
+    <td><input type="text" id="weight"> </td>
+  </tr>
+  <tr>
+    <td>Nhập chiều cao:(m)</td>
+    <td><input type="text" id="height"></td>
+  </tr>
+</table>
+<p><button type="button" name="button" onclick="tinh()">Kiểm tra</button> </p>
+<p id="display"></p>
+<script>
+  // let weight = document.getElementById("weight");
+  // let height = document.getElementById("height");
+  // let test = document.getElementById("test");
+  //
+  // let bmi = weight / (height ^ 2);
+
+  function tinh () {
+    let weight = document.getElementById("weight");
+    let height = document.getElementById("height");
+    let display = document.getElementById("display");
+    let w = weight.value;
+    let h = height.value;
+
+    let bmi = w / (h ^ 2);
+
+    if (bmi < 18)
+      display.innerText = ("Underweight");
+    else if (bmi < 25.0)
+      display.innerText = ("Normal");
+    else if (bmi < 30.0)
+      display.innerText = ("Overweight");
+    else
+      display.innerText = ("Obese");
+  }
+
+</script>
+</body>
+</html>
