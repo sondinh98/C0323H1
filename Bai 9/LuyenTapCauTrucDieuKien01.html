@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-right: auto; margin-left: auto;
+            width: 600px;
+
+        }
+        table,td,th {
+            border: 1px solid black;
+            text-align: center;
+
+        }
+        table tr:nth-child(odd) {
+            background: darkgray;
+        }
+        table tr:nth-child(even) {
+            background: white;
+        }
+        table tr:nth-child(1){
+            background: cornflowerblue;
+        }
+        input {
+            font-size: medium;
+            margin-left: 640px;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+
+// <!--  //   Bài tập 1-->
+// <!--  //-->
+// <!--  // let a = prompt("Nhập số a");-->
+// <!--  // let b = prompt("Nhập số b");-->
+// <!--  // if (a % b == 0 ) {-->
+// <!--  //     alert ('a chia hết cho b');-->
+// <!--  // }-->
+// <!--  //   else{-->
+// <!--  //      alert ('a khong chia hết cho b')-->
+// <!--  // }-->
+//
+//
+//
+// <!--  // Bai tap 2-->
+// <!--  // let a = prompt('Nhập số tuổi của bạn');-->
+// <!--  // if(a >= 18) {-->
+// <!--  //     alert("Bạn đạt đủ điều kiện vào lớp 10")-->
+// <!--  // }-->
+// <!--  // else {-->
+// <!--  //     alert("Bạn chưa đủ điều kiện vào lớp 10")-->
+// <!--  // }-->
+//
+// <!--  // Bai tap 3-->
+// <!--  // let a = prompt("Nhập một số nguyên bất kì");-->
+// <!--  // if(a > 0) {-->
+// <!--  //     alert("Số bạn nhập lớn hơn 0");-->
+// <!--  // }-->
+// <!--  // else if(a < 0) {-->
+// <!--  //     alert("Số bạn nhập nhỏ hơn 0");-->
+// <!--  // }-->
+// <!--  // else {-->
+// <!--  //     alert("Bạn vừa nhập số 0")-->
+// <!--  // }-->
+//
+//
+// <!--  // Bai tap 4-->
+// <!--  // let a = prompt(" Nhập số thứ nhất ");-->
+// <!--  // let b = prompt(" Nhập số thứ hai ");-->
+// <!--  // let c = prompt(" Nhập số thứ ba ");-->
+// <!--  // if (a > b) {-->
+// <!--  //     if(a > c) {-->
+// <!--  //         alert ("Số đầu tiên là số lơn nhất")-->
+// <!--  //     }-->
+// <!--  //     else {-->
+// <!--  //         alert("Số thứ ba là số lớn nhất")-->
+// <!--  //     }-->
+// <!--  // }-->
+// <!--  // else if(b > c) {-->
+// <!--  //     alert("Số thứ hai là số lớn nhất")-->
+// <!--  // }-->
+// <!--  // else {-->
+// <!--  //     alert("Số thứ ba là số lớn nhất")-->
+// <!--  // }-->
+
+
+
+// Bài tập 5
+
+// let a = prompt("Điểm bài kiểm tra");
+// let b = prompt("Điểm thi giữa kì");
+// let c = prompt("Điểm thi cuối kì");
+// let tong = (Number(a) +Number(b)*2 + Number(c)*3)/ 6;
+// if (tong >= 8){
+//     alert("Học lực giỏi");
+// }
+// else if(tong >= 6){
+//     alert("Học lực khá");
+// }
+// else if(tong >= 4){
+//     alert("Học lực trung bình");
+// }
+// else {
+//     alert("Học lực yếu")
+// }
+</script>
+
+<!--Bài tập 5-->
+<!--<input placeholder="Nhập doanh số bán hàng " id="doanh_so">-->
+<!--<button onclick="hoa_hong()">Hoa Hồng</button>-->
+<!--<p id="display"></p>-->
+<!--<script>-->
+<!--    function hoa_hong(){-->
+<!--        let doanh_so = document.getElementById('doanh_so');-->
+<!--        a = doanh_so.value-->
+<!--        b = 15 / 100-->
+<!--        c = a * b-->
+
+<!--        if (a >= 300000000) {-->
+<!--            display.innerText = ('Hoa Hồng : ' + c)-->
+<!--        }-->
+<!--        else if(a >= 200000000) {-->
+<!--            display.innerText = ('Hoa Hồng : ' + c)-->
+<!--        }-->
+<!--        else if(a >= 100000000) {-->
+<!--            display.innerText = ('Hoa Hồng : ' + c)-->
+<!--        }-->
+<!--        else if(a >= 50000000) {-->
+<!--            display.innerText = ('Hoa Hồng : ' + c)-->
+<!--        }-->
+<!--        else {-->
+<!--            document.getElementById('display').innerText = "Trợ cấp 5.000.000.VND"-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+
+<!-- Bài tập 6-->
+
+<table>
+    <tr id="1">
+        <td colspan="2">Bảng Giá</td>
+    </tr>
+    <tr>
+        <td>Phí thuê bao bắt buộc</td>
+        <td>25.000 VND</td>
+    </tr>
+    <tr>
+        <td>50 phút gọi đầu</td>
+        <td>600đ mỗi phút</td>
+    </tr>
+    <tr>
+        <td>150 phút gọi đầu</td>
+        <td>400đ mỗi phút</td>
+    </tr>
+    <tr>
+        <td>Sau 150 phút gọi đầu</td>
+        <td>200đ mỗi phút</td>
+    </tr>
+</table>
+<p><center>Cước điện thoại sử dụng mỗi phút: </center></p>
+<input placeholder="Nhập số phút sử dụng" id="so_phut">
+<button onclick="result()">Thành tiền</button>
+
+<script>
+function result(){
+    let so_phut = document.getElementById("so_phut");
+    a = so_phut.value;
+    b = 25000;
+    c = 200;
+    d = 400;
+    e = 600;
+    if(a <= 50) {
+        document.getElementById('so_phut').value = a * e + b + ' VND'
+    }
+    else if(a <= 150) {
+        document.getElementById('so_phut').value = a * d + b + ' VND'
+
+    }
+    else {
+        document.getElementById('so_phut').value = a * c + b + ' VND'
+    }
+
+}
+</script>
+
+</body>
+</html>
