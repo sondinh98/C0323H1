@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            border-collapse: collapse ;
+
+            width: 50%;
+        }
+        table,td,tr{
+            border: 1px solid black;
+            text-align: center;
+        }
+        table tr:nth-child(odd){
+            background-color:#eee;
+        }
+        table tr:nth-child(even){
+            background-color:white;
+        }
+        table tr:nth-child(1){
+            background-color:skyblue;
+        }
+    </style>
+</head>
+<body>
+<!--Bài 1:-->
+<!--<script>-->
+<!--  let a = prompt('Nhập độ C')-->
+<!--  let b = Number(a) * 9 / 5 +32-->
+<!--  alert('Độ F là : ' + b )-->
+<!--</script>-->
+<!--Bài 2:-->
+<!--<script>-->
+<!--  let a = prompt('Nhập số mét');-->
+<!--  let b = a * 3.2808-->
+<!--  alert('Số đo feet là : ' + b );-->
+<!--</script>-->
+<!--Bài 3-->
+<!--<script>-->
+<!--    let a = prompt('Nhập cạnh hình vuông');-->
+<!--    alert('Diện tích hình vuông là: ' + Number(a) * a  )-->
+<!--</script>-->
+<!--Bài 4-->
+<!--<script>-->
+<!--    let a = prompt('Nhập chiều dài ');-->
+<!--    let b = prompt('Nhập chiều rộng');-->
+<!--    alert('Diện tích hình chữ nhật là : ' + Number(a) * Number(b))-->
+<!--</script>-->
+<!--Bài 5-->
+<!--<script>-->
+<!--    let a = prompt('Nhập cạnh thứ nhất : ');-->
+<!--    let b = prompt('Nhập cạnh thứ hai : ');-->
+<!--    alert('Diện tích tam giác vuông là : ' + Number(a) * Number(b) / 2)-->
+<!--</script>-->
+<!--Bài 6-->
+<!--<h2>Giải phương trình bậc nhất : ax + b = 0</h2>-->
+<!--<input placeholder="Nhập a" id="so_a"><br>-->
+<!--<input placeholder="Nhập b" id="so_b"><br>-->
+<!--<button onclick=" result () "> Nghiệm là : </button>-->
+<!--<p id="display"></p>-->
+<!--<script>-->
+<!--    function result(){-->
+<!--        let a = document.getElementById("so_a").value;-->
+<!--        let b = document.getElementById("so_b").value;-->
+<!--        a = parseFloat(a);-->
+<!--        b = parseFloat(b);-->
+<!--        if( a == 0){-->
+<!--            if(b == 0){-->
+<!--                document.getElementById('display').innerText = (' x = 0')-->
+<!--            }else {-->
+<!--                document.getElementById('display').innerText = ('Ptrinh vô nghiệm')-->
+<!--            }-->
+<!--        }-->
+<!--        if (a != 0){-->
+<!--            if(b == 0){-->
+<!--                document.getElementById('display').innerText = ('x = 0')-->
+<!--            }-->
+<!--            else {-->
+<!--                document.getElementById('display').innerText = ('x'+'= ' + -b / a )-->
+<!--            }-->
+<!--        }-->
+
+
+<!--    }-->
+<!--</script>-->
+
+
+<!--Bài 7-->
+<!--<h2>Giải phương trình bậc 2 : ax<sup>2</sup> + bx + c = 0.(a#0)</h2>-->
+<!--<button>Nhập a</button><input  id="nhap_a"><br>-->
+<!--<button>Nhập b</button><input  id="nhap_b"><br>-->
+<!--<button>Nhập c</button><input  id="nhap_c"><br>-->
+<!--<button onclick="tinh_nghiem()">Nghiệm là : </button>-->
+<!--<p id="display"></p>-->
+<!--<script>-->
+<!--function tinh_nghiem(){-->
+<!--    let a = document.getElementById('nhap_a').value;-->
+<!--    let b = document.getElementById('nhap_b').value;-->
+<!--    let c = document.getElementById('nhap_c').value;-->
+<!--    a = parseFloat(a);-->
+<!--    b = parseFloat(b);-->
+<!--    c = parseFloat(c);-->
+<!--    delta = b * b  - 4 * a * c;-->
+<!--    if(delta == 0){-->
+<!--        document.getElementById('display').innerText = 'Phương trình có nghiệm kép x = : '+ -b / 2 * a-->
+<!--    }else if(delta < 0){-->
+<!--        document.getElementById('display').innerText = 'Phương trình vô nghiệm'-->
+<!--    }else {-->
+<!--        document.getElementById('display').innerText = 'Phương trình có 2 nghiệm phân biệt : ' + 'x1 = '+ (-b + Math.sqrt(delta)) / (2 * a) +' và x2 = ' + (-b - Math.sqrt(delta)) / (2 * a)-->
+<!--    }-->
+
+<!--}-->
+<!--</script>-->
+
+<!--Bài 8-->
+<!--<script>-->
+<!--    let a = prompt('Nhập vào một số bất kì : ');-->
+<!--    a = parseInt(a);-->
+<!--    if ( a > 0 && a < 120){-->
+<!--        alert('Tuổi bạn nhập phù hợp');-->
+<!--    }-->
+<!--    else{-->
+<!--        alert('Hãy nhập lại');-->
+<!--    }-->
+
+
+<!--</script>-->
+<!--Bài 9-->
+<!--<script>-->
+<!--    let a = prompt('Nhập cạnh a');-->
+<!--    let b = prompt('Nhập cạnh b');-->
+<!--    let c = prompt('Nhập cạnh c');-->
+<!--    a = parseFloat(a);-->
+<!--    b = parseFloat(b);-->
+<!--    c = parseFloat(c);-->
+<!--    if( a <= 0 || b <= 0 || c <= 0){-->
+<!--        alert('Không đạt đủ điều kiện là một tam giác. ')-->
+<!--    }-->
+<!--    else {-->
+<!--        if (a > b + c || b > a + c || c > a + b) {-->
+<!--            alert('Đạt đủ kiều kiền là một tam giác')-->
+<!--        }else {-->
+<!--        alert('Không đạt đủ điều kiện là một tam giac')}-->
+<!--    }-->
+
+
+<!--</script>-->
+<!--Bài 10-->
+<!--<table>-->
+<!--    <tr>-->
+<!--        <td colspan="3"><b>Giá bán lẻ điện sinh hoạt của EVN mới nhất năm 2023</b>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Bậc 1</td>-->
+<!--        <td>Từ 0-50kWh</td>-->
+<!--        <td>1.678 đồng/kWh</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Bậc 2 </td>-->
+<!--        <td>Từ 51-100kWh</td>-->
+<!--        <td>1.734 đồng/kWh</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Bậc 3</td>-->
+<!--        <td>Từ 101-200kWh</td>-->
+<!--        <td>2.014 đồng/kWh</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Bậc 4</td>-->
+<!--        <td>Từ 201kWh trở đi</td>-->
+<!--        <td>2.536đồng/kWh</td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--<br>-->
+<!--<br>-->
+<!--<input placeholder="Nhập kWh bạn sử dụng" id="kWh"><br>-->
+<!--<button onclick="thanh_toan()">Thành tiền : </button>-->
+<!--<p id="tien"></p>-->
+<!--<script>-->
+<!--    function thanh_toan(){-->
+<!--        let dien = document.getElementById('kWh').value;-->
+<!--        let tien = document.getElementById('tien');-->
+<!--        dien = Number(dien);-->
+<!--        if(dien > Number(200)) {-->
+<!--            b = 50 * (1678 + 1734 + 50 * 2014) + (dien - 200) * 2536-->
+<!--            tien.innerText = b + ' VND'-->
+<!--        }else if( dien > Number(100)){-->
+<!--            c = 50 * (1678 + 1734) + (dien - 100) * 2014-->
+<!--            tien.innerText = c + ' VND'-->
+<!--        }else if(dien > Number(50)){-->
+<!--            d = 50 * 1678 + (dien - 50) * 1734-->
+<!--            tien.innerText = d + ' VND'-->
+<!--        }else {-->
+<!--            tien.innerText = 1678 * dien + ' VND'-->
+<!--        }-->
+
+
+<!--    }-->
+<!--</script>-->
+
+<!--Bai 11-->
+<!--<table>-->
+<!--    <tr>-->
+<!--        <td colspan="3"><p>Bảng mức thuế thu nhập cá nhân</p></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Bậc</td>-->
+<!--        <td>Thu nhập tháng</td>-->
+<!--        <td>Số thuế phải nộp</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>1</td>-->
+<!--        <td>TN <= 5tr</td>-->
+<!--        <td>TN x 5%</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>2</td>-->
+<!--        <td>5tr < TN <= 10tr</td>-->
+<!--        <td>TN x 10% - 0.25tr</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>3</td>-->
+<!--        <td>10tr < TN <= 18tr</td>-->
+<!--        <td>TN x 15% - 0,75tr</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>4</td>-->
+<!--        <td>18tr < TN <= 32tr</td>-->
+<!--        <td>TN x 25% - 1.65tr</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>5</td>-->
+<!--        <td>32tr < TN <= 52tr</td>-->
+<!--        <td>Tn x 30% - 5,85tr</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>6</td>-->
+<!--        <td>TN > 52tr</td>-->
+<!--        <td>TN x 35% - 9,85tr</td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--<br>-->
+
+<!--<input placeholder="Nhập Thu Nhập của bạn" id="so_tien"><br>-->
+<!--<button onclick="thue_nop()">Thuế Nộp</button>-->
+<!--<p id="display"></p>-->
+<!--<script>-->
+<!--    function thue_nop(){-->
+<!--        let so_tien = document.getElementById('so_tien').value;-->
+<!--        let display = document.getElementById('display');-->
+<!--        so_tien = Number(so_tien);-->
+<!--        if(so_tien <= Number(5000000)){-->
+<!--            display.innerText = so_tien * 5 / 100 + ' VND'-->
+<!--        }else if(so_tien <= Number(10000000)){-->
+<!--            display.innerText = so_tien * 10 / 100 - 250000 + ' VND'-->
+<!--        }else if(so_tien <= Number(18000000)){-->
+<!--            display.innerText = so_tien * 15 / 100 - 750000 + ' VND'-->
+<!--        }else if(so_tien <= Number(32000000)){-->
+<!--            display.innerText = so_tien * 25 / 100 - 1650000 + ' VND'-->
+<!--        }else if(so_tien <= Number(52000000)){-->
+<!--            display.innerText = so_tien * 30 / 100 - 5850000 + ' VND'-->
+<!--        }else {-->
+<!--            display.innerText = so_tien * 35 / 100 - 9850000 + ' VND'-->
+<!--        }-->
+
+<!--    }-->
+<!--</script>-->
+<!--Bài 12-->
+
+</body>
+</html>
