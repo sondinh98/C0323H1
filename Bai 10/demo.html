@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -17,15 +17,82 @@
  // alert(tich);
 
 // Bai 2
- let tuoi;
- do {
-    tuoi = +prompt("Enter a number");
-   if(tuoi < 0 || tuoi > 100){
-     alert("Nhap lai")
-   }
- }
- while (tuoi < 0 || tuoi > 100)
- alert("Tuoi nhap phu hop")
+//  let tuoi;
+//  do {
+//     tuoi = +prompt("Enter a number");
+//    if(tuoi < 0 || tuoi > 100){
+//      alert("Nhap lai")
+//    }
+//  }
+//  while (tuoi < 0 || tuoi > 100)
+//  alert("Tuoi nhap phu hop")
+//  let cout = 0; let sum = 0
+//  for( let i = 0; i <= 50; i++){
+//      if ( i % 2 == 0){
+// document.write(i + "</br> ");
+// cout +=1;
+// sum += i;
+//      }
+//  }
+//  document.write('Tong co : '+ cout + '</br>' )
+//  document.write('Tong cac so la : '+ sum)
+
+ // let arr = [1,3,2,4,6];
+ // arr.splice(3,0,10);
+ // document.write(arr)
+
+
+ // let arr = [1,2,3,4,5]
+ // arr.reverse();
+ // document.write(arr)
+
+//  let numbers = [7,3,1,5,9];
+//  let min = numbers[0];
+//  let index = 0;
+//  for (let i = 1; i < numbers.length; i++){
+//      if( min > numbers[i]){
+//          min = numbers[i];
+//          index = i + 1;
+//      }
+//  }
+// document.write('min : ' + min + ' vitri : '+ index)
+//  let index = 3;
+//  let element = 10;
+//  let A = [1,4,5,6,7,4,];
+//  for (let i = A.length ; i > index; i --){
+//      A[i] = A[i-1];
+//  }
+//  A[index] = element;
+//  document.write(A)
+
+
+ // let numb1 = 12;
+ // let numb2 = 14;
+ // let result = sum( numb1, numb2);
+ // alert(result);
+</script>
+<input type="text" id="txtValue">
+<input type="button" id="btnadd" value="Add" onclick="add_element_to_array()">
+<input type="button" id="btndisplay" value="Display" onclick="display_array()">
+<div id="result"></div>
+
+<script>
+        let x = 0;
+        let array = Array();
+        function add_element_to_array(){
+            array[x] = document.getElementById("txtValue").value;
+            alert("Element : " + array[x] + "Added at index " + x);
+            x++;
+            document.getElementById("txtValue").value = ""
+
+        }
+        function display_array(){
+            let e = "<hr>";
+            for (let i = 0; i < array.length; i++){
+                e += "Element " + i + " = " + array[i] + "<br>"
+            }
+            document.getElementById("result").innerHTML = e;
+        }
 
 </script>
 </body>
