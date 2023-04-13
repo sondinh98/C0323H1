@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ceaa7f7-9e05-4b8d-bb9c-956a61c72346" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Bai 10/HienThiSoNguyenToDauTien.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai 10/LuyenTapVongLap01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai 10/LuyenTapVongLap02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai 11/BanCoCaroDonGian.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai 11/DaoNguocCacPhanTuTrongMang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai 11/MaxTrongMang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai 11/TaovaThaoTacVoiMang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai 11/TimGiaTriTrongMang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai 11/SuDungCacHamCoSan.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bai 10/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bai 10/demo.html" afterDir="false" />
     </list>
@@ -109,7 +102,8 @@
       <workItem from="1681227466670" duration="10163000" />
       <workItem from="1681261320223" duration="11990000" />
       <workItem from="1681285751378" duration="6167000" />
-      <workItem from="1681308377173" duration="6265000" />
+      <workItem from="1681308377173" duration="7031000" />
+      <workItem from="1681347936337" duration="9392000" />
     </task>
     <servers />
   </component>
