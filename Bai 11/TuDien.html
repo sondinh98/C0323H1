@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input placeholder="Nhập từ" type="text" id="keyword"> <button onclick="dich()">Dịch</button>
+<p id="display"></p>
+<script>
+    let keyword = document.getElementById("keyword")
+    let mang1 = [ "apple" , "banana" ,"lemon"];
+    let mang2 = ["táo", "chuối", "chanh"];
+    let display = document.getElementById("display");
+  function dich(){
+      let index = -1;
+      for (let i = 0; i < mang1.length; i ++) {
+          if (keyword.value == mang1[i]){
+              index = i;
+              break;
+          }
+      }
+      if (index !== -1){
+      display.innerText = mang2[index]
+      }
+      else {
+          display.innerText = "Khong tim thay"
+      }
+  }
+
+</script>
+</body>
+</html>
