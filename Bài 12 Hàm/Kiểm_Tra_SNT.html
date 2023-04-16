@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Kiểm tra Số Nguyên Tố</h2>
+<input type="text" id="nhapso">
+<input type="button" value="Check" onclick="soNguyenTo()">
+<p id="display"></p>
+<script>
+  function isPrime(number){
+      if (number <= 1)
+          return false;
+      else{
+          for (i = 2; i < number; i ++){
+              if (number % i == 0){
+                  return  false;
+              }
+          }
+      }
+      return true;
+  }
+  function soNguyenTo (){
+      let a = document.getElementById("nhapso").value;
+      let check = isPrime(a)
+      let display = document.getElementById("display")
+      if (check){
+          display.innerText = a + " La so nguyen to"
+      }else {
+          display.innerText = a + " Khong phai la so nguyen to"
+      }
+  }
+
+</script>
+</body>
+</html>
