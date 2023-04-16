@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 1: Viết chương trình khởi tạo mảng 2 chiều, gồm một bộ các phần tử có sẵn,  in ra các phần tử trong mảng. Chú ý: Sử dụng vòng lặp for lồng nhau-->
+<!--<br>-->
+<!--<br>-->
+<!--<script>-->
+<!--  let a = [-->
+<!--    [1, 2, 1, 24],-->
+<!--    [8, 11, 9, 4],-->
+<!--    [7, 0, 7, 27],-->
+<!--    [7, 4, 28, 14],-->
+<!--    [3, 10, 26, 7]-->
+<!--  ];-->
+<!--  for ( let i = 0; i < a.length; i ++){-->
+<!--    document.write("Row : "+i +"<br>")-->
+<!--    for (let j = 0; j < a[i].length; j ++){-->
+<!--      document.write(a[i][j] + "<br>")-->
+<!--    }-->
+<!--  }-->
+<!--</script>-->
+<!--<br>-->
+<!--<br>-->
+<!--<br>-->
+<!--Bài 2: Viết một chương trình để in các ký tự trong một mảng theo thứ tự đảo ngược.-->
+<!--Ví dụ, nếu một mảng chứa các ký tự  [ 'c', 's', 'c', '2', '6', '1' ] sau khi thực hiện đảo ngược sẽ là "162csc"-->
+<!--<br>-->
+<!--<br>-->
+<!--<script>-->
+<!--  let mang = ['a','b','c','1','6','3'];-->
+<!--  document.write("Mang = ["+mang+"]<br>");-->
+<!--  for (let i = 0; i < mang.length ; i ++){-->
+<!--    if (mang[i] < mang[mang.length - (1+i)]){-->
+<!--      let b = mang[i]-->
+<!--      mang[i] = mang[mang.length - (1+i)]-->
+<!--      mang[mang.length - (1+i)] = b-->
+
+<!--    }-->
+<!--  }-->
+<!--  document.write("Mang sau khi dao nguoc la : Mang = ["+mang+"]" )-->
+<!--</script>-->
+<!--<br>-->
+<!--<br>-->
+<!--<br>-->
+<!--Bài 3: Viết một chương trình khai báo một mảng ký tự và kích thước của mảng. Chương trình này đếm số ký tự số trong mảng.-->
+<!--<br>-->
+<!--<br>-->
+<!--<script>-->
+<!-- let mang = ["abc", 2, 5,10,"cdf","ghq",15,20];-->
+<!-- document.write("Mang = ["+mang+"] <br>");-->
+<!-- let count = 0;-->
+<!-- for (let i = 0; i < mang.length; i ++){-->
+<!--   if (mang[i] % 2 == 0 || mang[i] % 2 == 1)-->
+<!--     count ++;-->
+<!-- }-->
+<!-- document.write("Số ký tự số trong mảng là : " + count)-->
+
+<!--</script>-->
+<!--<br>-->
+<!--<br>-->
+<!--Bài 4: Viết một chương trình để đếm số từ trong một chuỗi-->
+<!--<br>-->
+<!--<br>-->
+<!--<script>-->
+<!--  let mang = ['apple','banana','mango','lemon'];-->
+<!--  document.write("Mang = ["+mang+"] <br>")-->
+<!--  let count = 0-->
+<!--  for (let i = 0; i <mang.length; i ++){-->
+<!--    count ++;-->
+<!--  }-->
+<!--  document.write("Mang tren ta co " + count + " từ")-->
+<!--</script>-->
+
+
+Bài 5: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.
+<br>
+<script>
+  let Chuoi1 = prompt("Nhap cac phan tu chuoi 1");
+  let Chuoi2 = prompt("Nhap cac phan tu chuoi 2");
+  let check = true;
+  document.write("Chuoi1 = ["+Chuoi1+"]<br>  Chuoi2 = ["+Chuoi2+"]<br> ")
+  if (Chuoi1.length != Chuoi2.length){
+    document.write("Hai chuoi khong giong nhau.")
+  }
+  else {
+    for (let i = 0; i < Chuoi1.length; i ++){
+      for (let j = 0; j < Chuoi2.length; j ++){
+        if (Chuoi1[i] == Chuoi2[j]){
+          check = true;
+        }
+        else {
+          check = false;
+        }
+      }
+    }
+    if (check == true){
+      document.write("Hai chuoi giong nhau")
+    }
+    else {
+      document.write("Hai chuoi khong giong nhau")
+    }
+  }
+</script>
+<br>
+Bài 6: Viết chương trình nhập vào một mảng ký tự, tìm tất cả các ký tự trong mảng là (-) và thay thế các ký tự này bởi ký tự ( _ )
+<br>
+<br>
+<script>
+  let Mang = new Array(prompt("Nhap vao mot chuoi "));
+  let Mangfix = [];
+  document.write("Mang = ["+Mang +"]  <br>");
+  for (let i = 0; i < Mang.length; i ++){
+    for (let j = 0; j < Mang[i].length; j ++){
+      if (Mang[i][j] == "-"){
+        Mang[i][j] = "_"
+        Mangfix.push("_")
+      }
+      else {
+        Mangfix.push(Mang[i][j])
+      }
+    }
+  }
+  document.write("Mangfix = ["+Mangfix+"] ")
+
+</script>
+
+</body>
+</html>
