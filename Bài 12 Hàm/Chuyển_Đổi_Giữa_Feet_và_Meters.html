@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Chuyển đổi giữa Feet và Meters</h2>
+<input type="text" id="nhapso">
+<select id="luachon">
+  <option value="feet">Feet</option>
+  <option value="meters">Meters</option>
+</select>
+<input type="button" onclick="chuyendoi()" value="Chuyển đổi">
+<p id="display"></p>
+<script>
+function chuyendoi(){
+  let a = document.getElementById("nhapso");
+  let b = document.getElementById("luachon");
+  let display = document.getElementById("display");
+  if (b.value == "feet")
+    display.innerHTML = "Ket qua : "+ FeettoMet(a.value) + " met"
+  else
+    display.innerHTML = "Ket qua : "+ MettoFeet(a.value) + "feet"
+}
+function FeettoMet(meter){
+  let feet =  3.279 * meter
+  return feet
+}
+
+function  MettoFeet(feet){
+  let met = 0.305 * feet
+  return met
+}
+</script>
+</body>
+</html>
