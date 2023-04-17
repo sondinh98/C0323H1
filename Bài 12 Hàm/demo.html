@@ -5,35 +5,63 @@
     <title>Title</title>
 </head>
 <body>
-<h2>Hàm kiểm tra số nguyên tố</h2>
-<input type="text" id="nhapso">
-<input type="button" value="Kiểm tra" onclick="soNguyenTo()">
+<!--<h2>Hàm kiểm tra số nguyên tố</h2>-->
+<!--<input type="text" id="nhapso">-->
+<!--<input type="button" value="Kiểm tra" onclick="soNguyenTo()">-->
 
+<!--<script>-->
+<!--  function isPrime(number) {-->
+<!--    if(number<=1) return false-->
+<!--    else if(number == 2 || number == 3) return true-->
+<!--    else if(number %2 == 0 )return false-->
+<!--    else {-->
+<!--      for (i=3; i<number; i+=2){-->
+<!--        if(number%i == 0){-->
+<!--          return false-->
+<!--        }-->
+<!--      }-->
+<!--    }-->
+
+<!--    return true-->
+<!--  }-->
+
+<!--  function soNguyenTo() {-->
+<!--    let so = document.getElementById("nhapso")-->
+<!--    let kiemtra = isPrime(so.value)-->
+<!--    if(kiemtra){-->
+<!--      alert(so.value+ " là một số nguyên tố")-->
+<!--    }else{-->
+<!--      alert(so.value+ " không phải số nguyên tố")-->
+<!--    }-->
+<!--  }-->
+<!--</script>-->
+<!--<script>-->
+<!--    let array1 = [3,4,5,]-->
+<!--    let array2 = [2,3,4,1,3,4,5,6,4]-->
+<!--    let count = 1;-->
+<!--    for (let i = 0; i < array2.length; i ++){-->
+<!--        if (array1[0] === array2[i]){-->
+<!--            for (let j = 1; j < array1.length; j ++) {-->
+<!--                if (array1[j] === array2[i + j])-->
+<!--                    count++;-->
+<!--            }-->
+<!--        }-->
+<!--    }if (count === array1.length)-->
+<!--        alert("array1 co nam trong")-->
+<!--</script>-->
+<!--<script>-->
+<!--    let so_a = prompt("Nhập số thứ nhất")-->
+<!--    let so_b = prompt("Nhập số thứ hai")-->
+<!--    let ketqua = doiCho2So(so_a,so_b)-->
+<!--    document.write("Đổi chỗ 2 số: "+ketqua[0] +" , "+ketqua[1])-->
+
+<!--    function doiCho2So(so_a, so_b) {-->
+<!--        let mang= [so_b,so_a]-->
+<!--        return mang-->
+<!--    }-->
+<!--</script>-->
 <script>
-  function isPrime(number) {
-    if(number<=1) return false
-    else if(number == 2 || number == 3) return true
-    else if(number %2 == 0 )return false
-    else {
-      for (i=3; i<number; i+=2){
-        if(number%i == 0){
-          return false
-        }
-      }
-    }
 
-    return true
-  }
-
-  function soNguyenTo() {
-    let so = document.getElementById("nhapso")
-    let kiemtra = isPrime(so.value)
-    if(kiemtra){
-      alert(so.value+ " là một số nguyên tố")
-    }else{
-      alert(so.value+ " không phải số nguyên tố")
-    }
-  }
 </script>
 </body>
 </html>
