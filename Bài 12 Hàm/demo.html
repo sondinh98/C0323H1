@@ -35,6 +35,7 @@
 <!--    }-->
 <!--  }-->
 <!--</script>-->
+<!--Chữa đề thi câu 3-->
 <!--<script>-->
 <!--    let array1 = [3,4,5,]-->
 <!--    let array2 = [2,3,4,1,3,4,5,6,4]-->
@@ -49,6 +50,7 @@
 <!--    }if (count === array1.length)-->
 <!--        alert("array1 co nam trong")-->
 <!--</script>-->
+<!--Đổi chỗ 2 số-->
 <!--<script>-->
 <!--    let so_a = prompt("Nhập số thứ nhất")-->
 <!--    let so_b = prompt("Nhập số thứ hai")-->
@@ -60,8 +62,143 @@
 <!--        return mang-->
 <!--    }-->
 <!--</script>-->
-<script>
+<!--In hình chữ nhật-->
+<!--<script>-->
+<!--    let a = " "-->
+<!--    for (let i=0;i<=10;i++){-->
+<!--        for (let j = 0;j<=30;j++){-->
+<!--            if (i == 0 || i == 10){-->
+<!--                document.write("<a style='color: red'>*<a>")-->
+<!--            }else{-->
+<!--                document.write("<a style='color: white'>*<a>")-->
+<!--            }-->
+<!--            if (j == 0 || j== 30) {-->
+<!--                document.write("<a style='color: red'>*<a>")-->
+<!--            }-->
+<!--        }-->
+<!--        document.write("<br>")-->
+<!--    }-->
+<!--</script>-->
+<!--Xóa 1 phần tử trong mảng-->
+<!--<script>-->
+<!--    let array1 = [2,3,5,3,4,5,3,7,5];-->
+<!--    let array2 = [];-->
+<!--    for (i = 0; i < array1.length; i ++){-->
+<!--        for (j = 1; j < i ; j ++){-->
+<!--            if (array1[i] !== array1[j])-->
+<!--                array2.push(array1[i])-->
+<!--        }-->
+<!--    }-->
+<!--    document.write( "" + array2)-->
+<!--</script>-->
+<!--<script>-->
+<!--    let arr = [2,4,3,6,7,4,5,9,1]-->
+<!--    for (let i = 0; i < arr.length - 1; i ++){-->
+<!--        for (let j = i + 1; j < arr.length; j ++){-->
+<!--            if (arr[i] > arr[j]){-->
+<!--                let b = arr[i];-->
+<!--                arr[i] = arr[j];-->
+<!--                arr[j] = b;-->
+<!--            }-->
+<!--        }-->
+<!--    }-->
+<!--    document.write( "" + arr)-->
+<!--</script>-->
+<!--<script>-->
+<!--    // Xoa 1 phan tu-->
+<!--    let arr = [3,4,5,2,8,1,7,0];-->
+<!--    let arr2 = new Array(arr.length - 1);-->
+<!--    for (let i = 0; i < arr.length; i ++){-->
+<!--        if (i < 2)-->
+<!--            arr2[i] = arr[i];-->
+<!--        if (i > 2)-->
+<!--            arr2[i-1] = arr[i];-->
+<!--    }-->
+<!--    document.write( ""+arr2)-->
+<!--</script>-->
+<!--Xoa phan tu trong mang co trung. Dung new Array-->
+<form action="javascript:void(0);" method="POST" onsubmit="listPhone.add()">
+    <input type="text" id="add" placeholder="Thêm sản phẩm">
+    <input type="submit" value="Thêm" >
+</form>
 
+<br><br>
+
+<table border="1px" cellpadding="0" cellspacing="0" width="600" style="text-align: center; ">
+    <tr>
+        <th style="padding: 10px 0;">Tổng các sản phẩm</th>
+        <th colspan="2" style="padding: 10px 0;"><p id="soluong"></p></th>
+    </tr>
+    <tbody id="product"></tbody>
+</table>
+
+<br><br>
+
+<form action="javascript:void(0);" method="POST" id="saveEdit" >
+    <input type="text" id="edit">
+    <input type="submit" value="Edit" />
+</form>
+
+
+
+<script>
+    let Phone = function(){
+        this.listPhone = ["Nokia","Iphone","Samsung","LG"]
+        this.product = document.getElementById("product")
+
+        this.count = function (data) {
+            let soluong = document.getElementById("soluong")
+            if (data != null){
+                if (data>0){
+                    soluong.innerHTML = "Có "+data+" sản phẩm"
+                } else{
+                    soluong.innerHTML = "Ko có sản phẩm"
+                }
+            }
+        }
+
+        this.display = function () {
+            let data = ""
+            if(this.listPhone.length>0){
+                for (let i=0; i<this.listPhone.length; i++){
+                    data+= "<tr>"
+                    data+= "<td style='padding: 10px 0; font-size: 20px;font-weight: bold ;text-transform:uppercase;color: red'>"+this.listPhone[i]+"</td>"
+                    data+= "<td style='padding: 10px 0;'><button onclick='listPhone.edit("+i+")'>Edit</button></td>"
+                    data+= "<td style='padding: 10px 0;'><button onclick='listPhone.delete("+i+")'>Delete</button></td>"
+                    data+= "</tr>"
+                }
+            }
+            this.count(this.listPhone.length)
+            return this.product.innerHTML = data
+        }
+
+        this.add = function () {
+            let addProduct = document.getElementById("add").value
+            this.listPhone.push(addProduct.trim())
+            this.display()
+            document.getElementById("add").value = ""
+        }
+
+        this.edit = function (id) {
+            let editProduct = document.getElementById("edit")
+            editProduct.value = this.listPhone[id]
+            self = this;
+            document.getElementById("saveEdit").onsubmit = function () {
+                let produc = editProduct.value
+                self.listPhone.splice(id, 1, produc)
+                self.display()
+                editProduct.value = ""
+            }
+        }
+
+        this.delete = function (id) {
+            this.listPhone.splice(id, 1);
+            this.display()
+        }
+    }
+
+    let listPhone = new Phone()
+    listPhone.display()
 </script>
 </body>
 </html>

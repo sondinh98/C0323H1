@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng quản lý sản phẩm sử dụng Hàm</title>
+    <style>
+      table {
+        width: 300px; height: 200px;
+        border: 1px solid black;
+        text-align: center;
+      }
+      td {
+        border: 1px solid black;
+      }
+      table tr:nth-child(odd){
+        background-color: #eeeeee;
+      }
+      table tr:nth-child(even){
+        background-color: white;
+      }
+
+    </style>
+</head>
+<body>
+<input type="text" id="tenSP">
+<button onclick="them()">Thêm sản phẩm</button>
+<br><br>
+<input type="text" id="idSP">
+<br>
+<input type="text" id="suaSP">
+<button onclick="xacNhanSua()">Sửa sản phẩm</button>
+<br>
+<br>
+<h1>Display All Product</h1>
+<table>
+  <thead>
+  <tr>
+    <td colspan="3">Sản Phẩm</td>
+
+  </tr>
+  </thead>
+  <tbody id="hienthi">
+
+  </tbody>
+</table>
+</body>
+</html>
+<script>
+  let arr = ['SAMSUNG','IPHONE','XIAOMI','LG','NOKIA'];
+
+  hienthi();
+  function hienthi(){
+    let str = "";
+    for (let i = 0; i < arr.length; i ++){
+      str += `<tr>
+                <td>` + arr[i] + `</td>
+                <td><button onclick="xoa(`+ i +`)">Xóa</button> </td>
+                <td><button onclick="Sua(` + i +`)">Sửa</button> </td>
+               </tr>`
+    }
+    document.getElementById("hienthi").innerHTML = str;
+  }
+
+  function them(){
+    let name = document.getElementById("tenSP").value;
+    arr.push(name)
+    hienthi()
+
+    document.getElementById("tenSP").value = "";
+  }
+
+  function Sua(i){
+    document.getElementById("idSP").value = i;
+    document.getElementById("suaSP").value = arr[i];
+  }
+
+  function xacNhanSua(){
+    let id = document.getElementById("idSP").value;
+    let Name = document.getElementById("suaSP").value;
+    arr[id] = Name;
+    hienthi();
+  }
+
+
+  function xoa(i){
+    let check = false;
+    let arr1 = [];
+    for (let j = 0; j < arr.length; j ++){
+      if (j !== i){
+        arr1.push(arr[j]);
+        check = true;
+      }
+    } if (check) arr = arr1;
+    hienthi();
+  }
+
+
+</script>
