@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp hình tròn</title>
+</head>
+<body>
+<!--<script>-->
+<!--  let Circle = function (radius){-->
+<!--    this.radius = radius;-->
+<!--    this.getRadius = function (){-->
+<!--      return radius;-->
+<!--    }-->
+<!--    this.getArea = function (){-->
+<!--      return Math.PI * radius * radius;-->
+<!--    }-->
+<!--  };-->
+<!--  let circle = new Circle(9)-->
+<!--  let radius = circle.getRadius();-->
+<!--  let area = circle.getArea();-->
+<!--  alert("radius : " + radius + "; are : " + area);-->
+<!--</script>-->
+<br>
+<br>
+<script>
+    class Circle{
+        radius1;
+        area1;
+        constructor(radius1) {
+            this.radius1 = radius1;
+            this.area1 = Math.PI * radius1*radius1;
+            return this.area1
+        }
+    }
+    let circle = new Circle(10)
+    console.log(circle)
+
+
+
+</script>
+</body>
+</html>

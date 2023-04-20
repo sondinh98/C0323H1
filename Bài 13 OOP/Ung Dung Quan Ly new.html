@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng quản lý đồ uống</title>
+
+</head>
+<body>
+<input type="text" id="tenSP">
+<input type="text" id="nsx">
+<input type="text" id="nhh">
+
+<button onclick="them()">Thêm sản phẩm</button>
+<br><br>
+<input type="text" id="suaten">
+<input type="text" id="suansx">
+<input type="text" id="suanhh">
+<button onclick="xacNhanSua()">Sửa sản phẩm</button>
+<br>
+<br>
+<h1>Display All Product</h1>
+
+<table id="hienthi"></table>
+<script>
+
+    class SanPham{
+        name;
+        nsx;
+        nhh;
+        constructor(name,nsx,nhh) {
+            this.name = name
+            this.nsx = nsx
+            this.nhh = nhh
+        }
+    }
+    let pepsi = new SanPham('Pepsi',1,30)
+    let Coca = new SanPham('Coca',2,31)
+    let Sting = new SanPham('Sting',3,29)
+    let array = [pepsi,Coca,Sting]
+
+
+    hienthi();
+    function hienthi(){
+        let str = "";
+        for (let i = 0; i < array.length; i ++){
+            str += `<tr>
+
+                <td>`+ array[i].name +`</td>
+                <td>`+ array[i].nsx +`</td>
+                <td>`+ array[i].nhh +`</td>
+                <td><button onclick="xoa(`+ i +`)">Xóa</button> </td>
+                <td><button onclick="Sua(` + i +`)">Sửa</button> </td>
+               </tr>`
+        }
+        document.getElementById("hienthi").innerHTML = str;
+    }
+    function them(){
+        let name = document.getElementById("tenSP").value
+        let nsx = document.getElementById("nsx").value
+        let nhh = document.getElementById("nhh").value
+        let themnuoc = new SanPham(name,nsx,nhh)
+        array.push(themnuoc)
+        hienthi();
+
+    }
+    function xoa(i){
+        arr1 = []
+        for (let j = 0; j < array.length; j ++){
+            if (j !== i) {
+                arr1.push(array[j]);
+            }
+        }
+        array = arr1;
+        hienthi();
+    }
+    let u;
+    function Sua(i){
+        document.getElementById("suaten").value = array[i].name;
+        document.getElementById("suansx").value =array[i].nsx;
+        document.getElementById("suanhh").value = array[i].nhh;
+        u = i;
+    }
+
+    function xacNhanSua(){
+        let ten1 = document.getElementById("suaten").value;
+        let nsx1 = document.getElementById("suansx").value;
+        let nhh1 = document.getElementById("suanhh").value;
+        let themmoi = new SanPham(ten1,nsx1,nhh1);
+        array[u] = themmoi;
+        hienthi();
+
+    }
+
+</script>
+</body>
+</html>

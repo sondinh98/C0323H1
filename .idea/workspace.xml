@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ceaa7f7-9e05-4b8d-bb9c-956a61c72346" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Bài 12 Hàm/Kiểm tra từ đối xứng.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bài 12 Hàm/Ứng dụng quản lý sản phẩm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài 13 OOP/Bài tập OOP.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài 13 OOP/Ung Dung Quan Ly new.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài 13 OOP/[Thực hành] Funny circles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài 13 OOP/[Thực hành] Xây dựng lớp Date.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài 13 OOP/[Thực hành] Xây dựng lớp hình tròn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài 13 OOP/demo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bài 10 Cấu Trúc Lặp/LuyenTapVongLap02.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bài 10 Cấu Trúc Lặp/LuyenTapVongLap02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bài 12 Hàm/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bài 12 Hàm/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bài 12 Hàm/Đề Thi demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bài 12 Hàm/Đề Thi demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bài 12 Hàm/Ứng dụng quản lý sản phẩm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bài 12 Hàm/Ứng dụng quản lý sản phẩm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +117,11 @@
       <workItem from="1681693816035" duration="18420000" />
       <workItem from="1681740515380" duration="10119000" />
       <workItem from="1681781351120" duration="17445000" />
-      <workItem from="1681828511251" duration="6698000" />
+      <workItem from="1681828511251" duration="7175000" />
+      <workItem from="1681838289657" duration="1074000" />
+      <workItem from="1681868110168" duration="14075000" />
+      <workItem from="1681913644439" duration="11420000" />
+      <workItem from="1681952278809" duration="21151000" />
     </task>
     <servers />
   </component>

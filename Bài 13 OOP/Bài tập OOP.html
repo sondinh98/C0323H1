@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập OOP</title>
+</head>
+<body>
+
+
+
+<button onclick="Bai1()">Bài 1</button> Tạo một class Animal để mô tả đặc điểm chung của các động vật và các phương thức như eat(), sleep() và move().<br>
+<button onclick="Bai2()">Bài 2</button>  Tạo một class Rectangle để tính diện tích và chu vi của một hình chữ nhật.<br>
+<button onclick="Bai3()">Bài 3</button>  Tạo một class Circle để tính diện tích và chu vi của một hình tròn.<br>
+<button onclick="Bai4()">Bài 4</button>  Tạo một class Person để lưu trữ thông tin cá nhân của một người như tên, địa chỉ, email, số điện thoại, v.v.<br>
+<button onclick="Bai5()">Bài 5</button>  Tạo một class Car để mô tả các đặc tính của một chiếc xe như tốc độ, mức tiêu thụ nhiên liệu, số chỗ ngồi, v.v.<br>
+<button onclick="Bai6()">Bài 6</button>  Tạo một class Product để lưu trữ thông tin về sản phẩm như tên, giá, mô tả, v.v.<br>
+<button onclick="Bai7()">Bài 7</button>  Tạo một class Bank để quản lý tài khoản ngân hàng của các khách hàng và các giao dịch.<br>
+<button onclick="Bai8()">Bài 8</button>  Tạo một class Employee để lưu trữ thông tin về một nhân viên như tên, địa chỉ, lương, v.v.<br>
+<button onclick="Bai9()">Bài 9</button>  Tạo một class Book để lưu trữ thông tin về một cuốn sách như tên, tác giả, năm xuất bản, v.v.<br>
+<button onclick="Bai10()">Bài 10</button>  Tạo một class Movie để lưu trữ thông tin về một bộ phim như tên, đạo diễn, diễn viên, thể loại, v.v.
+
+
+
+
+</body>
+</html>
+
+<script>
+  function Bai1() {
+
+    class Animal {
+      mau;
+      gioitinh;
+      cannang;
+      constructor(mau,gioitinh,cannang) {
+        this.mau = mau;
+        this.gioitinh = gioitinh;
+        this.cannang = cannang;
+      }
+      an() {
+        alert("anco")
+      }
+        ngu(){
+          alert("ngunuong")
+        }
+        dichuyen(){
+          alert("bonchan")
+        }
+    }
+
+    let cuu = new Animal("trang","duc","20kg")
+    console.log(cuu.mau +" "+ cuu.gioitinh +" "+ cuu.cannang +" " +cuu.an() +" "+ cuu.ngu())
+    // console.log(cuu.gioitinh)
+    // console.log(cuu.cannang)
+    // console.log(cuu.an())
+  }
+
+
+  function Bai2(){
+    class Rectangle{
+      chieudai;
+      chieurong;
+      constructor(chieudai,chieurong) {
+        this.chieudai = chieudai;
+        this.chieurong = chieurong;
+      }
+      dientich(){
+        return (this.chieudai * this.chieurong)
+      }
+      chuvi(){
+        return (this.chieudai+this.chieurong)*2
+      }
+
+    }
+    let a = +prompt("Nhap a : ")
+    let b = +prompt("Nhap b : ")
+let hcn = new Rectangle(a,b)
+    console.log("Dien tich hcn : " + hcn.dientich() + " Chu vi hcn : "+ hcn.chuvi())
+  };
+
+
+  function Bai3(){
+    class Circle{
+      bankinh;
+      constructor(bankinh){
+        this.bankinh = bankinh;
+      }
+      Dientich(){
+        return( Math.PI * this.bankinh * this.bankinh)
+      }
+      Chuvi(){
+        return ( Math.PI * this.bankinh * 2)
+      }
+
+    }
+    let a = +prompt("NHap")
+    let hinhtron = new Circle(a)
+    console.log(hinhtron.Dientich())
+    console.log(hinhtron.Chuvi())
+  };
+
+
+  function Bai4(){
+    class Person{
+      constructor(name,address,email,phone,gender,interests) {
+        this.name = name;
+        this.address = address;
+        this.email = email;
+        this.phone = phone;
+        this.gender = gender;
+        this.interests = interests;
+      }
+    }
+    let person1 = new Person("John","123CoNhue","acb@gmail.com",12344321,"male","sing")
+    console.log(person1)
+  }
+
+
+  function Bai5(){
+    class Car{
+      constructor(tocdo,tieuthu,soghe) {
+        this.tocdo = tocdo;
+        this.tieuthu = tieuthu;
+        this.soghe = soghe;
+
+      }
+    }
+    let car = new Car(120,8,4)
+    console.log(car.tocdo);
+    console.log(car.tieuthu);
+    console.log(car.soghe);
+  }
+
+
+  function Bai6(){
+    class Product{
+      constructor(ten,gia,mota) {
+        this.ten = ten;
+        this.gia = gia;
+        this.mota = mota;
+      }
+
+    }
+    let product = new Product("FerrariSF90","600$$","red");
+    console.log(product.ten)
+    console.log(product.gia)
+    console.log(product.mota)
+  }
+
+
+  function Bai7(){
+    class Bank{
+      tien = +prompt("Nhap tien dang co")
+      constructor(name,sotienrut,sotiennap) {
+        this.name = name
+        this.sotienrut = sotienrut
+        this.sotiennap = sotiennap
+      }
+      naptiep(){
+        this.tien += this.sotiennap
+        return this.tien
+      }
+      ruttien(){
+        this.tien -= this.sotienrut
+        return this.tien
+      }
+
+    }
+    let employee = new Bank("Dung",3000000,5000000)
+    console.log(employee.tien)
+    console.log(employee.name)
+    console.log(employee.naptiep())
+    console.log(employee.ruttien())
+
+  }
+
+
+  function Bai8(){
+    class Employee{
+      tien = 3000000
+      constructor(ten,diachi,luong) {
+        this.ten = ten;
+        this.diachi = diachi;
+        this.luong = luong;
+      }
+      luongve(){
+        this.tien += this.luong
+        return this.tien
+      }
+    }
+    let employee1 = new Employee("Dung","abc",1000000)
+    console.log(employee1.ten)
+    console.log(employee1.luong)
+    console.log(employee1.luongve())
+
+  }
+
+  function Bai9(){
+
+    class Book{
+      gia = 30000
+      constructor(tacgia,tensach,namsx,giam) {
+        this.tacgia = tacgia;
+        this.tensach = tensach;
+        this.namsx = namsx;
+        this.giam = giam;
+      }
+      trugia(){
+        this.gia -= this.giam;
+        return this.gia;
+      }
+    }
+    let book1 = new Book("Dung","Nha Gia Kim",1988,5000)
+    console.log(book1.tensach)
+    console.log(book1.trugia())
+    console.log(book1.namsx)
+    console.log(book1.giam)
+    console.log(book1.gia)
+  }
+
+
+  function Bai10(){
+    class Movie{
+      constructor(ten,tacgia,dienvien,theloai) {
+        this.ten = ten;
+        this.tacgia = tacgia
+        this.dienvien = dienvien
+        this.theloai = theloai
+      }
+    }
+    let movie = new Movie("PNTT","Vong Ngu","Han Lap","Tu Tien")
+    console.log(movie.ten)
+  }
+
+
+
+</script>

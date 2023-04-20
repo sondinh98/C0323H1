@@ -23,6 +23,8 @@
 </head>
 <body>
 <input type="text" id="tenSP">
+<input type="text" id="nsx">
+<input type="text" id="nhh">
 <button onclick="them()">Thêm sản phẩm</button>
 <br><br>
 <input type="text" id="idSP">
@@ -72,25 +74,26 @@
   function Sua(i){
     document.getElementById("idSP").value = i;
     document.getElementById("suaSP").value = arr[i];
+
   }
 
   function xacNhanSua(){
     let id = document.getElementById("idSP").value;
     let Name = document.getElementById("suaSP").value;
     arr[id] = Name;
+    alert(arr[id])
     hienthi();
   }
 
 
   function xoa(i){
-    let check = false;
     let arr1 = [];
     for (let j = 0; j < arr.length; j ++){
       if (j !== i){
         arr1.push(arr[j]);
-        check = true;
       }
-    } if (check) arr = arr1;
+    }
+    arr = arr1;
     hienthi();
   }
 
