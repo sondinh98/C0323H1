@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lớp mô tả HCN</title>
+</head>
+<body>
+<canvas id="mycanvas" width="600" height="300" style="border: 1px solid black"></canvas>
+<br>
+<br>
+<p id="display1"></p>
+<p id="display2"></p>
+
+<script>
+  class Rectangle {
+    constructor(width,height) {
+      this.width = width;
+      this.height = height;
+    }
+
+    getArea1() {
+      return this.width * this.height;
+    }
+
+    getArea2() {
+      return 2 * (this.width + this.height);
+    }
+
+    draw() {
+        let canvas = document.getElementById("mycanvas");
+        let ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(150,75,this.width,this.height)
+    }
+
+    setWidth(newWidth) {
+      this.width = newWidth;
+    }
+
+    setHeight(newHeight) {
+      this.height = newHeight;
+    }
+  }
+
+  // Khởi tạo một hình chữ nhật có chiều dài là 70 và chiều cao là 40
+  let myRect = new Rectangle(200,100);
+  myRect.draw()
+
+
+  //In ra màn hình diện tích và chu vi của hình chữ nhật
+  document.getElementById("display1").innerHTML = "Diện tích : " + myRect.getArea1();
+  document.getElementById("display2").innerHTML = "Chu vi : " + myRect.getArea2();
+
+
+  //Thay đổi chiều dài và chiều rộng của hình chữ nhật
+  myRect.setWidth(50);
+  myRect.setHeight(30);
+
+
+
+
+
+</script>
+</body>
+</html>

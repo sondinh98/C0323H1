@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Xây dựng lớp mô tả điện thoại</title>
+</head>
+<body>
+<script>
+
+  class Mobile {
+    constructor() {
+      this.battery = 100;
+      this.isPowerOn = false;
+      this.drafts = [];
+      this.inbox = [];
+      this.sent = [];
+    }
+
+    checkPower() {
+      return this.isPowerOn;
+    }
+
+    turnOn() {
+      if (!this.isPowerOn) {
+        this.isPowerOn = true;
+        this.battery--;
+      }
+    }
+
+    turnOff() {
+      if (this.isPowerOn) {
+        this.isPowerOn = false;
+        this.battery--;
+      }
+    }
+
+    chargeBattery() {
+      if (this.battery < 100) {
+        this.battery++;
+      }
+    }
+
+    composeMessage(message) {
+      if (this.isPowerOn) {
+        this.drafts.push(message);
+        this.battery--;
+      }
+    }
+
+    receiveMessage(message) {
+      if (this.isPowerOn) {
+        this.inbox.push(message);
+        this.battery--;
+      }
+    }
+
+    sendMessage(message, mobile) {
+      if (this.isPowerOn && mobile.checkPower()) {
+        mobile.receiveMessage(message);
+        this.sent.push(message);
+        this.battery--;
+      }
+    }
+
+    readInbox() {
+      if (this.isPowerOn) {
+        this.battery--;
+        return this.inbox;
+      }
+    }
+
+    readSent() {
+      if (this.isPowerOn) {
+        this.battery--;
+        return this.sent;
+      }
+    }
+  }
+
+
+
+  // Khởi tạo đối tượng điện thoại Nokia và iPhone
+  let nokia = new Mobile();
+  let iphone = new Mobile();
+
+  // Bật điện thoại Nokia
+  nokia.turnOn();
+
+  // Soạn tin nhắn và gửi cho iPhone
+  nokia.composeMessage('Xin chào iPhone');
+  nokia.sendMessage('Xin chào iPhone', iphone);
+
+  // Kiểm tra inbox của iPhone và hiển thị tin nhắn
+  let messages = iphone.readInbox();
+  console.log(messages); // ['Xin chào iPhone']
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Xây dựng lớp mô tả Temperature</title>
+</head>
+<body>
+<p id="display1">Nhiệt độ F : </p>
+<p id="display2">Nhiệt độ K : </p>
+<script>
+  class Temperature{
+      doC = +prompt("Nhập độ C : ")
+    constructor(doC) {
+      if (doC < -273) {
+        alert("Nhiệt độ không hợp lệ.")
+      }
+    }
+    getdoC() {
+      return this.doC;
+    }
+    getdoF() {
+      return this.doC * 9/5 + 32;
+    }
+    getdoK() {
+        return this.doC + 273.15;
+    }
+    setdoC(doC) {
+        if (doC < -273) {
+            alert("Nhiệt độ không hợp lệ.");
+        }
+        this.doC = doC;
+    }
+    setdoF(doF) {
+        this.doC = (doF -32) * 5/9;
+    }
+    setdoK(doK) {
+        this.doC = doK - 273.15;
+    }
+  }
+
+
+  let tem = new Temperature()
+  document.getElementById("display1").innerText = tem.getdoF();
+  document.getElementById("display2").innerText = tem.getdoK();
+</script>
+
+
+</body>
+</html>
