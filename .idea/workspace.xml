@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ceaa7f7-9e05-4b8d-bb9c-956a61c72346" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Bài 14 OOP2/Adam-Eva.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bài 14 OOP2/Mô phỏng quá trình mèo bắt chuột.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bài 14 OOP2/Tương tác công tắc và bóng đèn.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bài 14 OOP2/[Bài Tập] Adam - Eva.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bài 14 OOP2/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thi Thực Hành Kết Thúc MD 1/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thi Thực Hành Kết Thúc MD 1/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thi Thực Hành Kết Thúc MD 1/bai_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thi Thực Hành Kết Thúc MD 1/bai_4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_web_module1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/new game/demo11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/new game/demo2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/new game/demo3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bài 14 OOP2/demo.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +130,20 @@
       <workItem from="1682061093183" duration="2000" />
       <workItem from="1682061361121" duration="4905000" />
       <workItem from="1682231492211" duration="1630000" />
-      <workItem from="1682257873209" duration="2261000" />
+      <workItem from="1682257873209" duration="3363000" />
+      <workItem from="1682299399280" duration="25103000" />
+      <workItem from="1682345337435" duration="10024000" />
+      <workItem from="1682387359448" duration="9923000" />
+      <workItem from="1682433269140" duration="19511000" />
+      <workItem from="1682470701761" duration="16201000" />
+      <workItem from="1682491303182" duration="3379000" />
+      <workItem from="1682520777246" duration="4690000" />
+      <workItem from="1682525644259" duration="4321000" />
+      <workItem from="1682530427631" duration="8741000" />
+      <workItem from="1682557051412" duration="7369000" />
+      <workItem from="1682586241192" duration="2653000" />
+      <workItem from="1682601676244" duration="4741000" />
+      <workItem from="1682643851186" duration="8760000" />
     </task>
     <servers />
   </component>

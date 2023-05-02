@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+ xoa vi tri
+
+ function tryRemoveFromArray(arr, index) {
+   // Kiểm tra xem index có hợp lệ hay không
+   if (index >= 0 && index < arr.length) {
+     // Duyệt qua mảng và xoá phần tử tại vị trí index
+     for (let i = index; i < arr.length - 1; i++) {
+       arr[i] = arr[i+1];
+     }
+     arr.length = arr.length - 1; // Xoá phần tử cuối cùng của mảng
+   }
+
+   // Trả về mảng sau khi xoá phần tử (nếu có)
+   return arr;
+ }
+
+ // Ví dụ sử dụng hàm
+ const arr = [1, 2, 3, 4, 5];
+ const index = 2;
+ const newArr = tryRemoveFromArray(arr, index);
+ console.log(newArr); // Output: [1, 2, 4, 5]
+
+</script>
+
+
+</body>
+</html>
